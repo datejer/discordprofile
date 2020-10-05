@@ -1,7 +1,9 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { Blob } from "react-blob";
+
+import styles from "../styles/Home.module.css";
 
 const Tag = () => {
 	const router = useRouter();
@@ -34,7 +36,18 @@ const Tag = () => {
 				<link rel="icon" href="/logo.png" />
 			</Head>
 
-			<main className={styles.main}>hello {tag}</main>
+			<main className={styles.main}>
+				<Blob
+					size="75vh"
+					style={{
+						position: "absolute",
+						zIndex: 0,
+						backgroundColor: "#7289da",
+					}}
+					className={styles.blob}
+				/>
+				<h1>{tag}</h1>
+			</main>
 
 			<a href="https://ejer.ga">
 				<footer className={styles.footer}>Made by ejer</footer>

@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	font-family: "Whitney Light Regular", "Helvetica Neue", Helvetica, Arial,
 		sans-serif;
+	overflow: hidden;
 }
 
 a {

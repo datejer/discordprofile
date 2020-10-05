@@ -13,6 +13,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: #2c2f33;
 }
 
 .footer {
@@ -21,4 +22,39 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #2c2f33;
+	color: white;
+	transition: color 0.2s ease;
+	font-family: "Whitney Light Regular";
+}
+
+.footer:before {
+	border-top: 1px solid #23272a;
+	position: absolute;
+	width: 15%;
+	content: "";
+	bottom: 3em;
+}
+
+.main > h1 {
+	font-family: "Whitney Bold";
+	color: #fff;
+	font-size: 5em;
+	z-index: 1;
+}
+
+.blob {
+	width: 5em;
+	height: 5em;
+}
+
+@media (max-width: 700px) {
+	.blob {
+		width: 5em;
+		height: 5em;
+	}
+}
+
+.footer:hover {
+	color: #7289da;
 }
