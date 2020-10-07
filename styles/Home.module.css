@@ -48,10 +48,15 @@
 	height: 5em;
 }
 
-@media (max-width: 700px) {
-	.blob {
-		width: 5em;
-		height: 5em;
+@media (max-height: 800px) {
+	.main > h1 {
+		font-size: 4em;
+	}
+}
+
+@media (max-height: 600px) {
+	.main > h1 {
+		font-size: 3em;
 	}
 }
 

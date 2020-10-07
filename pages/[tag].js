@@ -38,7 +38,7 @@ const Tag = () => {
 
 			<main className={styles.main}>
 				<Blob
-					size="75vh"
+					size="50vh"
 					style={{
 						position: "absolute",
 						zIndex: 0,
